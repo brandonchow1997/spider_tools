@@ -3,6 +3,7 @@ import requests
 # cookie
 url = 'https://zhihu.com/'
 r = requests.get(url)
+
 cookies = r.cookies
 # 遍历cookies字典
 for k, v in cookies.get_dict().items():
